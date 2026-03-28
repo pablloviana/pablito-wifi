@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wi-Fi Grátis | Pablito Sorvetes</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="login-container">
+        
+        <header class="header">
+            <div class="logo-icon">🍦</div>
+            <h1>Pablito Sorvetes</h1>
+            <p>Conecte-se ao nosso Wi-Fi gratuito!</p>
+        </header>
+
+        <form class="wifi-form" action="https://formsubmit.co/pablitosorvete@gmail.com" method="POST">
+            
+            <!-- Honeypot for FormSubmit (prevents spam) -->
+            <input type="text" name="_honey" style="display:none">
+            
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            
+            <!-- Success Page redirect (optional, currently it will show default FormSubmit success)
+                 <input type="hidden" name="_next" value="https://sua-pagina-de-sucesso.com"> -->
+
+            <div class="input-group">
+                <label for="nome">Nome Completo</label>
+                <div class="input-icon-wrapper">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <input type="text" id="nome" name="Nome" placeholder="Ex: João da Silva" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="whatsapp">WhatsApp</label>
+                <div class="input-icon-wrapper">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <input type="tel" id="whatsapp" name="WhatsApp" placeholder="(11) 99999-9999" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="aniversario">Data de Aniversário</label>
+                <div class="input-icon-wrapper">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <input type="date" id="aniversario" name="Aniversário" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <span>LIBERAR WI-FI AGORA</span>
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+            </button>
+            <p class="disclaimer">Ao acessar, você concorda em receber nossas novidades e promoções deliciosas.</p>
+        </form>
+    </main>
+
+</body>
+</html>
