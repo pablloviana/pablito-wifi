@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Privacidade | Pablito Sorvetes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .privacy-container {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+            animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            text-align: left;
+            margin: 40px 0;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .privacy-container h1 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .privacy-container h2 {
+            color: var(--text-color);
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .privacy-container p, .privacy-container li {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .privacy-container ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: var(--secondary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 700;
+            text-align: center;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 208, 200, 0.4);
+        }
+        
+        /* Custom scrollbar for webkit */
+        .privacy-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        .privacy-container::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.05);
+            border-radius: 10px;
+        }
+        .privacy-container::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="privacy-container">
+        <h1>Termos de Privacidade do Clube VIP</h1>
+        
+        <p>A <strong>Pablito Sorvetes</strong> valoriza a sua privacidade e está em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018). Este documento explica de forma clara como usamos as informações que você nos fornece em troca do acesso ao nosso Wi-Fi gratuito e entrada no Clube VIP.</p>
+
+        <h2>1. Dados Coletados</h2>
+        <p>Ao se cadastrar no nosso formulário, coletamos as seguintes informações:</p>
+        <ul>
+            <li><strong>Nome Completo:</strong> Para chamarmos você pelo nome e personalizar nosso atendimento.</li>
+            <li><strong>Contato (Telefone):</strong> Para enviarmos nossa comunicação oficial, cupons de desconto, ofertas relâmpago e promoções de sorvetes.</li>
+            <li><strong>Data de Aniversário:</strong> Para prepararmos surpresas, mimos e brindes no mês ou dia do seu aniversário.</li>
+        </ul>
+
+        <h2>2. Uso dos Dados</h2>
+        <p>As informações coletadas são utilizadas exclusivamente para o relacionamento entre você e a <strong>Pablito Sorvetes</strong>. Nós <strong>NÃO VENDEMOS</strong>, nem compartilhamos, em hipótese alguma, seus dados com empresas terceiras, parceiros ou outras empresas de marketing.</p>
+
+        <h2>3. O seu Consentimento (Clube VIP)</h2>
+        <p>Ao concordar com nossos termos de privacidade (marcando a caixa no formulário anterior), você aceita formalmente integrar o <strong>Clube VIP da Pablito Sorvetes</strong> e autoriza o contato ativo do nosso time (via canais de contato) com finalidades comerciais e de relacionamento.</p>
+
+        <h2>4. Cancelamento e Direito ao Esquecimento</h2>
+        <p>Você é dono da sua informação. De acordo com a LGPD, você pode, a qualquer momento:</p>
+        <ul>
+            <li>Solicitar o descadastramento (opt-out) das nossas listas de transmissão e mensagens.</li>
+            <li>Solicitar a exclusão total do seu cadastro na nossa base de dados.</li>
+        </ul>
+        <p>Para isso, basta enviar uma mensagem respondendo "SAIR" em nosso canal de contato, ou solicitar pessoalmente no caixa da sorveteria.</p>
+
+        <h2>5. Segurança e Proteção</h2>
+        <p>Mantemos seus dados seguros em nossos sistemas internos de gestão de clientes, com acesso restrito apenas aos funcionários e gerentes responsáveis pela comunicação de marketing da sorveteria.</p>
+
+        <a href="index.html" class="back-btn">VOLTAR PARA A PÁGINA INICIAL</a>
+    </main>
+
+</body>
+</html>
