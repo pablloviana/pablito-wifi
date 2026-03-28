@@ -482,6 +482,47 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
 }
 
+/* --- Sorteio Specific Styles --- */
+.section-title {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin: 25px 0 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--glass-border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.expired-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.expired-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+    display: inline-block;
+    animation: bouncePop 1s cubic-bezier(0.28, 0.84, 0.42, 1) forwards;
+}
+
+.expired-container h2 {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.expired-container p {
+    color: var(--text-color);
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
 @media (max-width: 480px) {
     .login-container {
         padding: 30px 20px;
