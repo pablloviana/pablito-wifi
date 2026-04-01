@@ -15,24 +15,74 @@
     <style>
         /* Animações Dinâmicas para os Ícones */
         @keyframes bounceUser {
-            0%, 100% { transform: translateY(-50%); }
-            50% { transform: translateY(-65%) scale(1.15); }
+
+            0%,
+            100% {
+                transform: translateY(-50%);
+            }
+
+            50% {
+                transform: translateY(-65%) scale(1.15);
+            }
         }
+
         @keyframes ringPhone {
-            0%, 100% { transform: translateY(-50%) rotate(0); }
-            10% { transform: translateY(-50%) rotate(15deg); }
-            20% { transform: translateY(-50%) rotate(-10deg); }
-            30% { transform: translateY(-50%) rotate(10deg); }
-            40% { transform: translateY(-50%) rotate(-15deg); }
-            50% { transform: translateY(-50%) rotate(0); }
+
+            0%,
+            100% {
+                transform: translateY(-50%) rotate(0);
+            }
+
+            10% {
+                transform: translateY(-50%) rotate(15deg);
+            }
+
+            20% {
+                transform: translateY(-50%) rotate(-10deg);
+            }
+
+            30% {
+                transform: translateY(-50%) rotate(10deg);
+            }
+
+            40% {
+                transform: translateY(-50%) rotate(-15deg);
+            }
+
+            50% {
+                transform: translateY(-50%) rotate(0);
+            }
         }
+
         @keyframes popCalendar {
-            0%, 100% { transform: translateY(-50%) scale(1); }
-            50% { transform: translateY(-50%) scale(1.2) rotate(10deg); }
+
+            0%,
+            100% {
+                transform: translateY(-50%) scale(1);
+            }
+
+            50% {
+                transform: translateY(-50%) scale(1.2) rotate(10deg);
+            }
         }
-        .anim-user { animation: bounceUser 2.5s infinite ease-in-out; color: var(--primary-color) !important; filter: drop-shadow(0px 2px 4px rgba(248,90,94,0.4)); }
-        .anim-phone { animation: ringPhone 2.5s infinite ease-in-out; color: var(--primary-color) !important; filter: drop-shadow(0px 2px 4px rgba(248,90,94,0.4)); }
-        .anim-calendar { animation: popCalendar 2.5s infinite ease-in-out; color: var(--primary-color) !important; filter: drop-shadow(0px 2px 4px rgba(248,90,94,0.4)); }
+
+        .anim-user {
+            animation: bounceUser 2.5s infinite ease-in-out;
+            color: var(--primary-color) !important;
+            filter: drop-shadow(0px 2px 4px rgba(248, 90, 94, 0.4));
+        }
+
+        .anim-phone {
+            animation: ringPhone 2.5s infinite ease-in-out;
+            color: var(--primary-color) !important;
+            filter: drop-shadow(0px 2px 4px rgba(248, 90, 94, 0.4));
+        }
+
+        .anim-calendar {
+            animation: popCalendar 2.5s infinite ease-in-out;
+            color: var(--primary-color) !important;
+            filter: drop-shadow(0px 2px 4px rgba(248, 90, 94, 0.4));
+        }
     </style>
 </head>
 
@@ -81,7 +131,9 @@
             </div>
 
             <div class="input-group">
-                <label for="aniversario">Dia e Mês do Aniversário <small style="color: var(--text-muted); font-size: 11.5px; opacity:0.8;">(Apenas dia e mês, ex: 25/08)</small></label>
+                <label for="aniversario">Dia e Mês do Aniversário <small
+                        style="color: var(--text-muted); font-size: 11.5px; opacity:0.8;">(Apenas dia e mês, ex:
+                        25/08)</small></label>
                 <div class="input-icon-wrapper">
                     <svg class="icon anim-calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -133,23 +185,20 @@
         </div>
     </main>
 
-<<<<<<< HEAD
-    <!-- Modal removed since the flow redirects to WhatsApp now -->
-=======
     <!-- Success Modal Overlay: Displayed dynamically upon form submit -->
     <div id="success-modal" class="modal-overlay hidden">
         <div class="modal-content">
             <div class="modal-icon">🍦</div>
             <h2>Tudo Certo!</h2>
             <p>Conecte-se na rede:</p>
-            <h2 class="wifi-network">Wi-Fi Pablito</h2>
+            <h3 class="wifi-network">Pablito</h3>
             <p>E a sua senha é:</p>
             <h3 class="wifi-password">pablito10</h3>
-            <p class="modal-sub">Uhuu! Agora você já pode se conectar à Wi-Fi Pablito.</p>
+            <p class="modal-sub">Uhuu! Agora você já pode se conectar à nossa rede. Refresque seu dia com o melhor
+                sorvete!</p>
             <button id="close-modal-btn" class="close-modal-btn">CONECTAR AGORA</button>
         </div>
     </div>
->>>>>>> 278f5447acc7e2ab748d3e8154bc7d2482636e03
 
     <!-- Script to Handle Form Submit and Redirect to WhatsApp -->
     <script>
